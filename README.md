@@ -24,13 +24,26 @@ lake exe econlean
 
 ```
 EconLean/
-├── EconLean/           # Library source files
-│   └── Basic.lean      # Basic definitions
-├── EconLean.lean       # Main library entry point
-├── Main.lean           # Executable entry point
-├── lakefile.lean       # Lake build configuration
-└── lean-toolchain      # Lean version specification
+├── EconLean/                    # Library source files
+│   ├── Basic.lean               # Basic definitions
+│   ├── GameTheory.lean          # Game theory module
+│   ├── GameTheory/              # Game theory submodules
+│   │   └── Basic.lean           # Basic game theory definitions
+│   ├── GeneralEquilibrium.lean  # General equilibrium theory module
+│   └── GeneralEquilibrium/      # General equilibrium submodules
+│       └── Basic.lean           # Basic general equilibrium definitions
+├── EconLean.lean                # Main library entry point
+├── Main.lean                    # Executable entry point
+├── lakefile.lean                # Lake build configuration
+└── lean-toolchain               # Lean version specification
 ```
+
+## Library Organization
+
+The library is organized into major branches of economic theory:
+
+- **Game Theory**: Formalization of game-theoretic concepts including players, strategies, payoffs, and equilibrium concepts
+- **General Equilibrium Theory**: Formalization of general equilibrium models including agents, production, markets, and equilibrium conditions
 
 ## Contributing
 
