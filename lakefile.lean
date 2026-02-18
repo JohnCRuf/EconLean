@@ -1,8 +1,12 @@
 import Lake
 open Lake DSL
 
+set_option autoImplicit false
+
 package «econlean» where
-  -- add package configuration options here
+  leanOptions := #[⟨`autoImplicit, false⟩]
+
+require "leanprover-community" / "mathlib"
 
 lean_lib «EconLean» where
   -- add library configuration options here
