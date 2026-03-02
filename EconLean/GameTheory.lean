@@ -7,17 +7,24 @@ Authors: John C. Ruf
 /-!
 # Game Theory
 
-This module contains definitions and theorems related to game theory.
+This module contains definitions and theorems related to non-cooperative game theory.
 
 ## Main Definitions
 
-* TODO: Add main definitions here
+* `EconLean.GameTheory.FiniteGame` — a finite n-player normal-form game
+* `EconLean.GameTheory.FiniteGame.MixedProfile` — mixed strategy profiles
+* `EconLean.GameTheory.FiniteGame.expectedPayoff` — expected payoff under mixed strategies
+* `EconLean.GameTheory.FiniteGame.IsNashEquilibrium` — Nash equilibrium condition
 
 ## Main Theorems
 
-* TODO: Add main theorems here
+* `EconLean.GameTheory.FiniteGame.nash_equilibrium_exists` — Nash's existence theorem:
+  every finite game has at least one Nash equilibrium in mixed strategies
 
 ## References
 
-* TODO: Add references here
+* Nash, J. (1950). Equilibrium points in n-person games. PNAS, 36(1), 48–49.
+* Nash, J. (1951). Non-cooperative games. Annals of Mathematics, 54(2), 286–295.
 -/
+
+import EconLean.GameTheory.Basic

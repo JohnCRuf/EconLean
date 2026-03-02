@@ -7,12 +7,19 @@ Authors: John C. Ruf
 /-!
 # Basic Game Theory Definitions
 
-This file contains basic definitions for game theory.
+This file re-exports all submodules of the `EconLean.GameTheory` module.
 
-## TODO
+## Submodules
 
-* Define players
-* Define strategies
-* Define payoffs
-* Define games
+* `EconLean.GameTheory.FiniteGame` — finite normal-form games and pure strategy profiles
+* `EconLean.GameTheory.MixedStrategy` — mixed strategies and mixed strategy profiles
+* `EconLean.GameTheory.ExpectedPayoff` — expected payoff and its continuity
+* `EconLean.GameTheory.BestResponse` — best response correspondence and Nash equilibrium
+* `EconLean.GameTheory.NashExistence` — Nash's existence theorem
 -/
+
+import EconLean.GameTheory.FiniteGame
+import EconLean.GameTheory.MixedStrategy
+import EconLean.GameTheory.ExpectedPayoff
+import EconLean.GameTheory.BestResponse
+import EconLean.GameTheory.NashExistence
